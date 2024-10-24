@@ -2,12 +2,34 @@ body {
     align-items: center;
     background-color: rgb(14,14,14);
     display: flex;
+    flex: 1 1 0;
     justify-content: center;
     margin: 0;
 }
 
 button {
     background-color: rgb(1,103,177);
+    display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .frame {
@@ -16,4 +38,9 @@ button {
 
 .text {
     background-color: rgb(249, 250, 252);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100vh;
+    justify-content: center;
 }
