@@ -21,29 +21,33 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input {
+    height: 1.5rem;
+}
+
 .form {
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     max-width: 800px;
+    padding-bottom: 20px;
+    width: 32rem;
 }
 
-.form p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.form form {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.form label,
-.form input {
-    flex: 1 0 auto;
-    margin: 10px 0;
+.input-group {
+    margin-bottom: 15px;
 }
-
-.form label {
-    text-align: right;
-  }
-
 
 .frame {
     height: 100vh;
