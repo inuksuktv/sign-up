@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('fonts/Norse-Bold.otf') format('truetype');
+}
+
 body {
     align-items: center;
     background-color: rgb(14,14,14);
     display: flex;
     flex: 1 1 0;
+    font-family: 'Lato', 'Montserrat', Arial, Helvetica, sans-serif;
     justify-content: center;
     margin: 0;
 }
@@ -23,34 +29,89 @@ button {
 
 label {
     display: block;
+    font-size: .8rem;
     margin-bottom: 3px;
 }
 
 input {
-    height: 1.5rem;
+    border: 1px solid lightgrey;
+    font-size: 1.2rem;
+    width: 16rem;
 }
+
+input:focus {
+    border-color: rgb(1,103,177);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.frame {
+    height: 100vh;
+    position: relative;
+}
+
+.banner {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: row;
+    font-family: 'NorseBold';
+    font-size: 6rem;
+    justify-content: center;
+    position: absolute;
+    top: 140px;
+    width: 656px;
+}
+
+.banner p {
+    color: white;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.attribution {
+    bottom: 10px;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    width: 656px;
+}
+
+.attribution p {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a:visited,
+.attribution a:link {
+    color: white;
+}
+
+.attribution p a {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 
 .form {
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
-    max-width: 800px;
     padding-bottom: 20px;
-    width: 32rem;
+    width: 40rem;
 }
 
 .form form {
     display: grid;
-    gap: 30px;
+    gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .input-group {
     margin-bottom: 15px;
-}
-
-.frame {
-    height: 100vh;
 }
 
 .text {
@@ -60,6 +121,7 @@ input {
     gap: 3rem;
     height: 100vh;
     justify-content: center;
+    max-width: 800px;
 }
 
 .text > * {
